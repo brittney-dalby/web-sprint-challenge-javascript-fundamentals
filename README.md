@@ -26,13 +26,32 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+.map is a higher order function that uses a function as an argument. It is used to convert data and returns a new array but doesn't change the origional array. You would use .map if you wanted to take an array and return a new array with just one of the objects keys in it. 
+.filter is used for creating a new array based on if something is true or false. if true it will be pushed to the new array, if false it won't be. You would use this if you wanted to look through a set of data and create a new array of objects that meet th specifications. 
+.reduce returns a single value. it is usuallu used for multiplication or addition. If you wanted the average number from an array that had numerical value, this would be the function to use.
+
 2. Explain the difference between a callback and a higher order function.
+
+A callback function is a function that is used as an argument.
+A higher order function is a function that uses other functions as arguments.
 
 3. Explain what a closure is.
 
+A closure is when an inner function reaches outside of itself to get a variable from the outer function. Closures are useful because they create clean and precise code. And it keeps things function scoped rather than globally scoped which can get messy and confusing.
+
 4. Describe the four principles of the 'this' keyword.
 
+Window Binding: when 'this' is not given context the computer will just give you everything in it. This is an error and is to be avoided.
+
+Implicit Binding: when 'this' is used in objects with methods 'this' refers to the object to the left of the dot.
+
+Explicit Binding: when 'this' is used with .call, .bind, or .apply we are explicitly telling 'this' what it should be.
+
+New Binding: when you use the new keyword, it tells 'this' that it is refering to the new object being constructed.
+
 5. Why do we need super() in an extended class?
+
+you need super() in an extended class to give the new object the parent attributes.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
